@@ -1,0 +1,7 @@
+<div #container class="scroll-container" [style.width.px]="width">
+    <table #viewport class="viewport" [style.width.px]="totalContentWidth">
+        <tr *ngFor="let number of rowsNumber" class="visible-list" [style.transform]="'translateX(' + offsetX + 'px)'">
+            <th class='item' *ngFor="let item of visibleItems[number]">{{ item }}</th>
+        </tr>
+    </table>
+</div>

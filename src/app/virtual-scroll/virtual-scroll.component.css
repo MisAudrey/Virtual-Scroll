@@ -1,0 +1,28 @@
+.scroll-container {
+    overflow: auto;
+    width: 50%;
+  }
+  
+  .viewport {
+    overflow: hidden;
+    will-change: transform;
+    position: relative;
+    width: 50%;
+  }
+  
+  .visible-list{
+    background: white;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  
+  .item {
+    height: 50px;
+    width: 240px;
+    /* line-height: 30px; */
+    box-sizing: border-box;
+    border-style: 1px solid;
+    overflow: scroll;
+  }
